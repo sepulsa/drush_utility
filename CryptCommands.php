@@ -27,6 +27,7 @@ class CryptCommands extends DrushCommands {
    *   A base-64 encoded sha-256 hmac, with + replaced with -, / with _ and
    *   any = padding characters removed.
    *
+   * @bootstrap none
    * @command crypt:hmac
    */
   public function hmacBase64($data, $key): string {
@@ -43,6 +44,7 @@ class CryptCommands extends DrushCommands {
    *   A base-64 encoded sha-256 hash, with + replaced with -, / with _ and
    *   any = padding characters removed.
    *
+   * @bootstrap none
    * @command crypt:hash
    */
   public function hashBase64($data): string {
@@ -59,6 +61,7 @@ class CryptCommands extends DrushCommands {
    *
    * @return \Robo\ResultData
    *
+   * @bootstrap none
    * @command crypt:hash-equals
    */
   public function hashEquals($known_string, $user_string): ResultData {
@@ -79,6 +82,7 @@ class CryptCommands extends DrushCommands {
    * @return string
    *   The base64 encoded result will have a length of up to 4 * $count.
    *
+   * @bootstrap none
    * @command crypt:random-bytes
    */
   public function randomBytesBase64(int $count = 32): string {
