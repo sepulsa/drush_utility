@@ -1,0 +1,23 @@
+{
+    "name": "sepulsa/drush_utility",
+    "description": "Drupal core utility in drush",
+    "type": "drupal-drush",
+    "keywords": [
+        "drupal",
+        "drush"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Abi",
+            "email": "abi@sepulsa.com"
+        }
+    ],
+    "require": {
+        "drupal/core-utility": "^8.6",
+        "drush/drush": "^9.4"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
